@@ -212,14 +212,16 @@ footer h3 {
 }
 
 .hero .productCard {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     max-width: 880px;
     background: #fff;
     box-shadow: 0 10px 40px rgba(0, 31, 40, 0.2);
-    display: flex;
     gap: 26px;
     overflow: hidden;
     position: relative;
+    z-index: 3;
 }
 .hero .productCard::after {
     content: "КУПИТЬ";
@@ -351,6 +353,55 @@ footer h3 {
     font-size: 14px;
 }
 
+.navigPr{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    align-items: flex-start; 
+}
+
+.arrowPr{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: flex-end;
+    margin-left: 410px;
+    margin-top:30px;
+    z-index: 5;
+   
+}
+
+.arrowL{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 2px;
+    z-index: 5;
+}
+
+.arrowR{
+    display: flex;
+    flex-direction: row;
+    border: 2px;
+    z-index: 5;
+    
+}
+
+.numberProd{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 390px;
+    z-index: 5;
+    width: 51px;
+    height: 24px;
+    background-color: #3F4900;
+    color: white;
+}
+
 .About {
     background: url("/src/assets/About-background.jpg") no-repeat;
     background-size: cover;
@@ -380,7 +431,7 @@ footer h3 {
     margin-bottom: 10px;
     border-color: #000;
     border: 1px;
-
+    z-index: 3;
     
 }
 
@@ -397,7 +448,7 @@ footer h3 {
     color: #f2f2f2;
     position:absolute;
     top:-100px;
-    overflow: hidden;
+    z-index: 1;
     
 }
 
