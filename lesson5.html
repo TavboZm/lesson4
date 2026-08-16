@@ -8,8 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="./src/js/index.js"></script>
 </head>
+    
 <body>
+            
     <header>    
     <div class="header wrapper">
         <a href="/"><svg width="114" height="24" viewBox="0 0 114 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,8 +87,8 @@
                             <small>25 голосов</small>
                         </div>
                         <div class="tabs">
-                            <div class="tab selected"><a href="#">Описание</a></div>
-                            <div class="tab"><a href="#">Уникальные фишки</a></div>
+                            <div class="descriptionTab tab selected"><a>Описание</a></div>
+                            <div class="featuresTab tab"><a>Уникальные фишки</a></div>
                         </div>
                         <div class="tabContent selected" id="descriptionTab">
                             Разработан нашей командой энтузиастов серфинга для детей, которые только начинают чувствовать себя уверенно на волнах. Может также использоваться легкими, продвинутыми взрослыми.
@@ -97,6 +100,8 @@
                             <div class="price">49 000 <span>руб.</span></div>
                             <button type="button" onclick="alert('Положил в корзину!')">КУПИТЬ</button>
                         </div>
+                        <button onclick="nextProduct()">+</button>
+                        <button onclick="prevProduct()">-</button>
                         <a href="#" class="seeall">
                             Все доски
                         </a>
@@ -261,5 +266,6 @@
  
 
     <script type="module" src="./src/js/main.js"></script>
+    
 </body>
 </html>
